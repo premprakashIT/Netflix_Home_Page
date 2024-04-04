@@ -9,14 +9,14 @@
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
     <style>
-        body {
+        main {
     background-image: url('/assets/home.jpg');
     background-size: cover;
     background-position: center;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(0, 0, 0, .5); /* Adjust the opacity value */
+    background-color: rgba(0, 0, 0, .9); /* Adjust the opacity value */
 }
 
         header {
@@ -82,10 +82,59 @@
             width: 30%;
             font-size: 18px;
         }
+
+        
+    .main2{
+        color: white;
+        font-family: arial;
+        height:300px;
+        margin: 70px;
+            
+           
+          
+           
+           
+    }
+    #img1{
+        width: 400px;
+        height: 200px;
+        float: right;
+    }
+    #leftPannel{
+        width: 300px;
+       margin-left: 50px;
+       display: inline;
+       font-size: 180%;
+      
+       
+    }
+    .main2 {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin: 70px;
+}
+
+#img2 {
+    width: 450px;
+    height: 300px;
+}
+
+#rightPannel {
+    font-size: 100%;
+    max-width: calc(100% - 470px);
+}
+
+
+    
+    body{
+        background-color: black;
+    }
     </style>
 </head>
 
 <body>
+    <main>
     <header>
         <div class="logo">NETFLIX</div>
         <div>
@@ -102,12 +151,37 @@
             <h1>Unlimited movies, TV shows and more.</h1>
             <p>Watch anywhere. Cancel Anytime.</p>
             <div class="input-group">
-                <input type="email" placeholder="Enter Email" class="form-control">
+                <input type="email" placeholder="Enter Email" class="form-control" title="write email">
                 <button class="btn btn-danger">Get Started <i class="bi bi-chevron-right"></i></button>
             </div>
         </div>
     </div>
-
+</main>
+<div class="main2">
+    <div>
+        <div id="leftPannel">
+            <h1>
+                Enjoy on your TV
+            </h1>
+            <p>
+            <img id="img1" src="/assets/rightpage.PNG" alt="">
+                 Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="main2">
+    <img id="img2" src="/assets/leftpage.PNG" alt="">
+    <div id="rightPannel">
+        <h1>
+            Download your shows to watch offline
+        </h1>
+        <p>
+            Save your favourites easily and always have something to watch.
+        </p>
+    </div>
+</div>
+</div>
 </body>
 
 </html>
